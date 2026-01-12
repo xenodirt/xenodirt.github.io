@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - XenoShop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/xenoshop_logo.svg" id="logo">
+        <nav>
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="contact-us.html">contact us</a>
+        </nav>
+    </header>
+
+    <div id="content">
+        <h1 id="content-title">contact us</h1>
+
+        <div id="content-blocks">
+            <form class="contact-card" action="action_page.php" method="post">
+                <div class="form-row">
+                <div class="form-group">
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Juan Dela Cruz" required>
+                </div>
+                <div class="form-group">
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Write your message…" rows="8" required></textarea>
+                </div>
+                <button class="form-submit" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Xenodirt. All rights reserved.</p>
+    </footer>
+</body>
+</html>
