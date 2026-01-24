@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - XenoShop</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <img src="images/xenoshop_logo.svg" id="logo" alt="XenoShop logo">
+        <nav>
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="contact-us.html">contact us</a>
+            <a href="log-in.html">log in</a>
+            <a href="user-profile.html">profile</a>
+        </nav>
+    </header>
+
+    <div id="content">
+        <h1 id="content-title">sign up</h1>
+
+        <div id="content-blocks">
+            <form class="contact-card">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname">First name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Juan" required
+                            autocomplete="given-name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Dela Cruz" required
+                            autocomplete="family-name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" required
+                        autocomplete="email">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Create a password" required
+                            minlength="8" autocomplete="new-password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm">Confirm password</label>
+                        <input type="password" id="confirm" name="confirm_password" placeholder="Re-type password"
+                            required minlength="8" autocomplete="new-password">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile-number">Mobile Number</label>
+                    <input type="text" id="mobile-number" name="mobile-number" placeholder="09XXXXXXXXX" required
+                        autocomplete="mobile-number">
+                </div>
+
+                <div class="form-group">
+                    <label for="home-address">Home Address</label>
+                    <input type="text" id="home-address" name="home-address" placeholder="67 Cherry St." required
+                        autocomplete="home-address">
+                </div>
+
+                <button class="form-submit" type="submit">Create account</button>
+
+                <p>
+                    Have an account already?
+                    <a href="log-in.html" style="color: #00bf63;">Log in</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Xenodirt. All rights reserved.</p>
+    </footer>
+</body>
+</html>
