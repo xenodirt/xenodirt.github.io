@@ -63,9 +63,9 @@ nav a:hover {
 
 #content-cards {
     display: flex;
-    gap: 90px;
     justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    gap: 80px;
 }
 
 .content-card-link {
@@ -75,10 +75,11 @@ nav a:hover {
 }
 
 .content-card {
+    width: 200px;
+    align-items: stretch;
     background-color: #222222;
     padding: 30px;
     border-radius: 30px;
-    width: inherit;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -94,6 +95,7 @@ nav a:hover {
 
 #content-blocks {
     display: flex;
+    flex-wrap: wrap;
     gap: 120px;
     justify-content: center;
     align-items: center;
@@ -236,6 +238,31 @@ nav a:hover {
 
 .profile-btn:hover {
     transform: translateY(-3px);
+}
+
+#cart-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.cart-card {
+    display: flex;
+    width: 600px;
+    justify-content: left;
+}
+
+.cart-card h2 {
+    margin-left: 20px;
+}
+
+.cart-card p {
+    margin-left: 80px;
+    margin-top: 25px;
+}
+
+.cart-card img {
+    width: 100px;
 }
 
 footer {

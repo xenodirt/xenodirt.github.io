@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - XenoShop</title>
+    <title>Cart - XenoShop</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/scripts.js"></script>
 </head>
 <body>
     <header>
@@ -22,21 +21,20 @@
     </header>
 
     <div id="content">
-        <h1 id="content-title">contact us</h1>
+        <h1 id="content-title">cart</h1>
 
-        <div id="content-blocks">
-            <form class="contact-card" action="action_page.php" method="post">
-                <div class="form-row">
-                <div class="form-group">
-                    <label for="fname">Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Juan Dela Cruz" required>
+        <div id="cart-cards">
+            <a href="index.html" class="content-card-link">
+                <div class="content-card cart-card">
+                    <img src="images/shirt_1.jpg">
+                    <h2>Gildan® Budget Unisex T-shirt</h2>
+                    <p>1x | P450</p>
                 </div>
-                <div class="form-group">
-                <label for="subject">Message</label>
-                <textarea id="subject" name="subject" placeholder="Write your message…" rows="8" required></textarea>
-                </div>
-                <button class="form-submit" type="submit">Send</button>
-            </form>
+            </a>
+        </div>
+
+        <div class="profile-actions">
+            <a class="profile-btn" href="sign-up.html">Checkout</a>
         </div>
     </div>
 
