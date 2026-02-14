@@ -6,7 +6,7 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="https://xenodirt.github.io/jrtwebshop">
+    <BrowserRouter basename="/jrtwebshop">
       <App />
     </BrowserRouter>
   </React.StrictMode>
