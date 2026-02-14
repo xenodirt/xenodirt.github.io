@@ -1,0 +1,31 @@
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import About from "./pages/About";
+import ContactUs from "./pages/ContactUs";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import UserProfile from "./pages/UserProfile";
+import Cart from "./pages/Cart";
+
+export default function App() {
+  return (
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/log-in" element={<Login />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/user-profile" element={<UserProfile />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+      <Footer />
+    </>
+  );
+}
