@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/jrtwebshop/',
   build: {
-    outDir: "jrtwebshop",
+    outDir: "../jrtwebshop",
     emptyOutDir: true
   }
 })
